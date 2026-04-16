@@ -8,12 +8,12 @@ This document contains a structured list of tasks required to build the Verse Fl
 
 This phase focuses on generating the core Spring Boot 3.2 project structure and installing necessary tools.
 
-- [ ] **Install Spring Boot CLI:** Ensure the Spring Boot CLI is installed on this Mac via Homebrew. Run the following commands:
+- [x] **Install Spring Boot CLI:** Ensure the Spring Boot CLI is installed on this Mac via Homebrew. Run the following commands:
   ```bash
   brew tap spring-io/tap
   brew install spring-boot
   ```
-- [ ] **Scaffold Spring Boot Project:** Run the following command in the `verse_flow_service` root directory to scaffold the initial project structure in place:
+- [x] **Scaffold Spring Boot Project:** Run the following command in the `verse_flow_service` root directory to scaffold the initial project structure in place:
   ```bash
   spring init --build=maven \
     --java-version=21 \
@@ -24,8 +24,8 @@ This phase focuses on generating the core Spring Boot 3.2 project structure and 
     --package-name=com.verseflow.service \
     --extract .
   ```
-- [ ] **Add OpenAPI Swagger Dependency:** Update the `pom.xml` to include `springdoc-openapi-starter-webmvc-ui` (version compatible with Spring Boot 3) to enable the Swagger API documentation on boot.
-- [ ] **Test App Startup Context:** Execute `./mvnw spring-boot:run` to ensure the clean project context starts up properly (ignoring database connection errors at this stage if unconfigured).
+- [x] **Add OpenAPI Swagger Dependency:** Update the `pom.xml` to include `springdoc-openapi-starter-webmvc-ui` (version compatible with Spring Boot 3) to enable the Swagger API documentation on boot.
+- [x] **Test App Startup Context:** Execute `./mvnw spring-boot:run` to ensure the clean project context starts up properly (ignoring database connection errors at this stage if unconfigured).
 
 ---
 
